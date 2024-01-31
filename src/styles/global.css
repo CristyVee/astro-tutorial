@@ -20,6 +20,21 @@ h1 {
   font-size: 2.5rem;
 }
 
+/* hamburger styles */
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
 /* nav styles */
 
 .nav-links {
@@ -30,6 +45,7 @@ h1 {
   display: none;
   margin: 0;
 }
+
 
 .nav-links a {
   display: block;
@@ -50,9 +66,10 @@ h1 {
   display: unset;
 }
 
-
+@media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
+    /* margin-left: 5em; */
+    text-align: center;
     display: block;
     position: static;
     width: auto;
@@ -64,20 +81,11 @@ h1 {
     padding: 15px 20px;
   }
 
-
-
-/* @media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
+  .hamburger {
+    display: none;
   }
 
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
+}
 
-} */
+
+
